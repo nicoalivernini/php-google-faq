@@ -137,13 +137,21 @@
   //   }
   // };
 
-  for ($i=0; $i < count($testi) ; $i++) {
-    foreach ($testi[$i] as $key => $value) {
-    var_dump($testi[$i]['title']);
-    var_dump($testi[$i]['info']);
+  foreach ($testi as $key => $value_testi) {
+    echo $value_testi['title'];
+    foreach ($value_testi as $value) {
+      foreach ($value as $value_text) {
+        for ($i=0; $i < count($value_text); $i++) {
+          echo $value_text[$i];
+        }
+      }
     }
   }
- ?>
+  ?>
+
+
+
+
 </main>
 
 <footer>
@@ -152,3 +160,13 @@
 
 </body>
 <html>
+
+for ($i=0; $i < count($testi) ; $i++) {
+  var_dump($testi[$i]);
+  foreach ($testi[$i] as $key => $value) {
+    ?>
+  <div class="">
+    <p><?= $testi[$i]['title']; ?></p>
+  </div>
+}
+}
