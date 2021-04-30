@@ -116,40 +116,54 @@
         </div>
         <div class="right-navbar">
           <div class="content-right-navbar">
-            <h2>Privacy e termini</h2>
+            <svg class="gb_We" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+            <img src="assets/img/img-account.jpeg" alt="">
           </div>
         </div>
       </div>
     </div>
   </div>
+  <div id="menu">
+    <div class="container">
+      <div class="content-menu">
+        <ul>
+          <li>Introduzione</li>
+          <li>Nome sulla privacy</li>
+          <li>Termini di utilizzo</li>
+          <li>Tecnologia</li>
+          <li class="active">Domande frequenti</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
 </header>
 
 <main>
-<?php
-  // foreach ($testi as $key => $value) {
-  //   var_dump($value);
-  //   for ($i=0; $i <count($value) ; $i++) {
-  //     if (is_array($value['info'][$i])) {
-  //       var_dump($value['info'][$i]);
-  //     } else {
-  //       echo $value['info'][$i];
-  //     };
-  //   }
-  // };
+  <div id="domande-frequenti">
+    <div class="container text">
+      <div class="content-domande-frequenti">
 
-  foreach ($testi as $key => $value_testi) {
-    echo $value_testi['title'];
-    foreach ($value_testi as $value) {
-      foreach ($value as $value_text) {
-        for ($i=0; $i < count($value_text); $i++) {
-          echo $value_text[$i];
-        }
-      }
-    }
-  }
-  ?>
+        <?php
+          foreach ($testi as $key => $value_testi) {
+        ?>
+            <h2><?= $value_testi['title'] . '<br>'; ?></h2>
 
-
+        <?php
+            foreach ($value_testi as $value) {
+              foreach ($value as $value_text) {
+                for ($i=0; $i < count($value_text); $i++) {
+        ?>
+                  <p><?= $value_text[$i] . '<br>'; ?></p>
+        <?php
+                }
+              }
+            }
+          }
+        ?>
+      </div>
+    </div>
+  </div>
 
 
 </main>
@@ -160,13 +174,3 @@
 
 </body>
 <html>
-
-for ($i=0; $i < count($testi) ; $i++) {
-  var_dump($testi[$i]);
-  foreach ($testi[$i] as $key => $value) {
-    ?>
-  <div class="">
-    <p><?= $testi[$i]['title']; ?></p>
-  </div>
-}
-}

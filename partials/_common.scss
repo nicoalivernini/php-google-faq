@@ -1,0 +1,9 @@
+.container {
+  width: 97%;
+  margin: 0 auto;
+  &.text {
+    max-width: 978px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
