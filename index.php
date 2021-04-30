@@ -41,21 +41,23 @@
       'title' => "Perché il mio account è associato a un paese?",
       'info' => [
         [
-          "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose: <br><br>
-            <ol>
-              <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti: <br><br>
-                <ul>
-                  <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li> <br>
-                  <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li> <br>
-                </ul>
-              </li>
-              <li>
-                La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
-              </li>
-            </ol> <br><br>
-          Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account."
+          "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
+          <ol>
+            <li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+              <ol>
+                <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+                <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+              </ol>
+            </li>
+            <li>
+              La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
+            </li>
+          </ol>"
         ],
-      ]
+        [
+          "Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account."
+        ],
+      ],
     ],
     [
       'title' => "Stabilire il paese associato al tuo account",
@@ -147,14 +149,14 @@
         <?php
           foreach ($testi as $key => $value_testi) {
         ?>
-            <h2><?= $value_testi['title'] . '<br>'; ?></h2>
+            <h2><?= $value_testi['title'] ?></h2>
 
         <?php
             foreach ($value_testi as $value) {
               foreach ($value as $value_text) {
                 for ($i=0; $i < count($value_text); $i++) {
         ?>
-                  <p><?= $value_text[$i] . '<br>'; ?></p>
+                  <p><?= $value_text[$i] ?></p>
         <?php
                 }
               }
@@ -164,12 +166,34 @@
       </div>
     </div>
   </div>
-
-
 </main>
 
 <footer>
-
+  <div id="footer">
+    <div class="container footer">
+      <div class="content-footer">
+        <div class="left-footer">
+          <div class="content-left-footer">
+            <ul>
+              <li>Google</li>
+              <li>Tutto su Google</li>
+              <li>Privacy</li>
+              <li>Termini</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-footer">
+          <div class="content-right-footer">
+            <img src="assets/img/icon-footer.png" alt="">
+            <select class="" name="">
+              <option value="italiano">Italiano</option>
+              <option value="inglese">Inglese</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 </body>

@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
   padding: 30px;
 }
+.container.footer {
+  max-width: 978px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
 #navbar .container .content-navbar {
   display: flex;
@@ -82,4 +87,38 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  color: #000000DE;
+}
+#domande-frequenti .container .content-domande-frequenti ol {
+  margin: 0 0 0 16px;
+}
+#domande-frequenti .container .content-domande-frequenti ol li {
+  padding-top: 12px;
+  line-height: 24px;
+  padding-left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000DE;
+}
+#domande-frequenti .container .content-domande-frequenti ol li ol {
+  list-style-type: lower-alpha;
+}
+#footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #eee;
+}
+#footer .container .content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+}
+#footer .container .content-footer .left-footer .content-left-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+#footer .container .content-footer .left-footer .content-left-footer ul li {
+  font-size: 11px;
 }
