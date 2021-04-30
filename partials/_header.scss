@@ -1,0 +1,21 @@
+#navbar {
+  .container {
+    .content-navbar {
+      @include flex-between-center;
+      height: 65px;
+      padding: 10px;
+      .left-navbar {
+        .content-left-navbar {
+          @include flex-start-center;
+          h2 {
+            color: $gray_menu;
+            font-weight: 400;
+          }
+        }
+      }
+      .right-navbar {
+
+      }
+    }
+  }
+}

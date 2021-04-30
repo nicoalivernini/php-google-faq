@@ -1,0 +1,25 @@
+{
+  "name": "esercizio",
+  "version": "1.0.0",
+  "description": "php-google-faq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoalivernini/php-google-faq.git"
+  },
+  "author": "nico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoalivernini/php-google-faq/issues"
+  },
+  "homepage": "https://github.com/nicoalivernini/php-google-faq#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.18",
+    "postcss": "^8.2.13",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
+  }
+}

@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar .container .content-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  padding: 10px;
+}
+#navbar .container .content-navbar .left-navbar .content-left-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#navbar .container .content-navbar .left-navbar .content-left-navbar h2 {
+  color: #5f6368;
+  font-weight: 400;
+}
