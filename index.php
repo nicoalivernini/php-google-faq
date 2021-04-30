@@ -126,16 +126,24 @@
 
 <main>
 <?php
+  // foreach ($testi as $key => $value) {
+  //   var_dump($value);
+  //   for ($i=0; $i <count($value) ; $i++) {
+  //     if (is_array($value['info'][$i])) {
+  //       var_dump($value['info'][$i]);
+  //     } else {
+  //       echo $value['info'][$i];
+  //     };
+  //   }
+  // };
+
   for ($i=0; $i < count($testi) ; $i++) {
-    ?>
-    <div class="">
-      <?=  $testi[$i]['title'] ?> <br>
-      <?=  $testi[$i]['info'] ?>
-    </div>
-
-
-  <?php } ?>
-
+    foreach ($testi[$i] as $key => $value) {
+    var_dump($testi[$i]['title']);
+    var_dump($testi[$i]['info']);
+    }
+  }
+ ?>
 </main>
 
 <footer>
