@@ -1,34 +1,44 @@
-#domande-frequenti {
-  .container {
-    .content-domande-frequenti {
-      h2 {
-        color: $gray_title;
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 500;
-        padding-top: 65px;
-      }
-      p {
-        padding-top: 20px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        color: $gray_text;
-      }
-      ol {
-        margin: 0 0 0 16px;
-        li {
-          padding-top: 12px;
-          line-height: 24px;
-          padding-left: 16px;
+main {
+  padding-top: 95px;
+  #domande-frequenti {
+    .container {
+      .content-domande-frequenti {
+        h2 {
+          color: $gray_title;
+          font-size: 24px;
+          line-height: 32px;
+          font-weight: 400;
+          padding-top: 65px;
+        }
+        p {
+          padding-top: 20px;
+          margin-bottom: 10px;
           font-size: 14px;
           font-weight: 400;
+          line-height: 24px;
           color: $gray_text;
-          ol {
-            list-style-type: lower-alpha;
-            li {
+          a {
+            color: $color_href;
+            text-decoration: none;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        ol {
+          margin: 0 0 0 16px;
+          li {
+            padding-top: 12px;
+            line-height: 24px;
+            padding-left: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $gray_text;
+            ol {
+              list-style-type: lower-alpha;
+              li {
 
+              }
             }
           }
         }

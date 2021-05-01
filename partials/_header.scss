@@ -1,53 +1,69 @@
-#navbar {
-  .container {
-    .content-navbar {
-      @include flex-between-center;
-      height: 65px;
-      padding: 10px;
-      .left-navbar {
-        .content-left-navbar {
-          @include flex-start-center;
-          h2 {
-            color: $gray_menu;
-            font-weight: 400;
-            padding-left: 5px;
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  height: 95px;
+  #navbar {
+    .container {
+      .content-navbar {
+        @include flex-between-center;
+        height: 65px;
+        .left-navbar {
+          .content-left-navbar {
+            @include flex-start-center;
+            h2 {
+              color: $gray_menu;
+              font-weight: 400;
+              padding-left: 5px;
+              font-size: 22px;
+            }
           }
         }
-      }
-      .right-navbar {
-        .content-right-navbar {
-          @include flex-end-center;
-          svg {
-            width: 25px;
-            margin-right: 15px;
-          }
-          img {
-            border-radius: 50%;
+        .right-navbar {
+          .content-right-navbar {
+            @include flex-end-center;
+            svg {
+              width: 25px;
+              margin-right: 15px;
+              fill: $gray_menu;
+            }
+            img {
+              border-radius: 50%;
+            }
           }
         }
       }
     }
   }
-}
-#menu {
-  .container {
-    .content-menu {
-      padding: 0 10px;
-      ul {
-        @include flex-start-center;
-        list-style: none;
-        li {
-          font-size: 15px;
-          font-weight: 500;
-          margin-right: 40px;
-          padding-bottom: 10px;
-          color: $gray_menu;
-          &.active {
-            color: $active_menu;
-            border-bottom: 3px solid $active_menu;
+  #menu {
+    .container {
+      .content-menu {
+        ul {
+          @include flex-start-center;
+          list-style: none;
+          li {
+            margin-bottom: 5px;
+            &.active {
+              color: $active_menu;
+              border-bottom: 3px solid $active_menu;
+            }
+            a {
+              font-size: 15px;
+              font-weight: 400;
+              margin-right: 40px;
+              color: $gray_menu;
+              text-decoration: none;
+
+            }
           }
         }
       }
     }
+  }
+  hr {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid $border_footer;
   }
 }

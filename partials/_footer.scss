@@ -11,13 +11,41 @@
             @include flex-center-center;
             list-style: none;
             li {
-              font-size: 11px;
+              &:nth-child(2):before {
+                @include dot;
+              }
+              &:nth-child(3):before {
+                @include dot;
+              }
+              &:nth-child(4):before {
+                @include dot;
+              }
+              a {
+                font-size: 11px;
+                color: $footer_menu;
+                text-decoration: none;
+                font-weight: 300;
+              }
             }
           }
         }
       }
       .right-footer {
-
+        .content-right-footer {
+          @include flex-center-center;
+          img {
+            padding-right: 10px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          select {
+            padding-right: 80px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

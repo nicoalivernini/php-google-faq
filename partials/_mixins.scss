@@ -21,3 +21,13 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin dot {
+  content: '\f111';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  color: $footer_menu;
+  vertical-align: middle;
+  font-size: 2px;
+  padding: 5px 5px;
+}
