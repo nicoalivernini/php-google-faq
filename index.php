@@ -134,7 +134,7 @@
           <li><a href="#">Norme sulla privacy</a></li>
           <li><a href="#">Termini di utilizzo</a></li>
           <li><a href="#">Tecnologia</a></li>
-          <li class="active"><a href="#">Domande frequenti</a></li>
+          <li><a href="#" class="active">Domande frequenti</a></li>
         </ul>
       </div>
     </div>

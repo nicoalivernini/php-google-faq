@@ -11,6 +11,11 @@ header {
         .left-navbar {
           .content-left-navbar {
             @include flex-start-center;
+            img {
+              &:hover {
+                cursor: pointer;
+              }
+            }
             h2 {
               color: $gray_menu;
               font-weight: 400;
@@ -26,9 +31,19 @@ header {
               width: 25px;
               margin-right: 15px;
               fill: $gray_menu;
+              // &:hover {
+              //   cursor: pointer;
+              //   background-color: rgba(60,64,67,0.08);
+              //   border-radius: 50%;
+              //   padding: 7px;
+              //   width: 40px;
+              // }
             }
             img {
               border-radius: 50%;
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }
@@ -43,17 +58,18 @@ header {
           list-style: none;
           li {
             margin-bottom: 5px;
-            &.active {
-              color: $active_menu;
-              border-bottom: 3px solid $active_menu;
-            }
+            margin-right: 40px;
+
             a {
               font-size: 15px;
               font-weight: 400;
-              margin-right: 40px;
               color: $gray_menu;
               text-decoration: none;
-
+              padding-bottom: 3px;
+              &.active {
+                color: $active_menu;
+                border-bottom: 3px solid $active_menu;
+              }
             }
           }
         }
