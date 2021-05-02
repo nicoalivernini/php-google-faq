@@ -60,7 +60,7 @@
       ],
     ],
     [
-      'title' => "Stabilire il paese associato al tuo account",
+      'subtitle' => "Stabilire il paese associato al tuo account",
       'info' => [
         [
           "Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.",
@@ -69,7 +69,7 @@
           "I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l'associazione del paese.",
         ],
         [
-          "Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"#\">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.",
+          "Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. <a href=\"#\" class=\"contact\">Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.",
         ],
       ]
     ],
@@ -104,9 +104,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/master.css">
 </head>
-
 <body>
-
 <header>
   <div id="navbar">
     <div class="container">
@@ -141,16 +139,21 @@
   </div>
   <hr>
 </header>
-
 <main>
   <div id="domande-frequenti">
     <div class="container text">
       <div class="content-domande-frequenti">
-
         <?php
           foreach ($testi as $key => $value_testi) {
+            if ($value_testi['title'] == true) {
         ?>
             <h2><?= $value_testi['title'] ?></h2>
+
+        <?php } elseif ($value_testi['subtitle'] == true) { ?>
+
+              <h3><?= $value_testi['subtitle'] ?></h3>
+
+        <?php } ?>
 
         <?php
             foreach ($value_testi as $value) {
@@ -168,7 +171,6 @@
     </div>
   </div>
 </main>
-
 <footer>
   <div id="footer">
     <div class="container footer">
@@ -196,6 +198,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 <html>

@@ -4,7 +4,7 @@
   .container {
     .content-footer {
       @include flex-between-center;
-      padding: 10px 15px 10px 15px;
+      padding: 15px 0;
       .left-footer {
         .content-left-footer {
           ul {

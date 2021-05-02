@@ -31,3 +31,12 @@
   font-size: 2px;
   padding: 5px 5px;
 }
+
+@mixin redirect {
+  content: '\f35d';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  vertical-align: middle;
+  font-size: 9px;
+  padding: 5px 5px;
+}
